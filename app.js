@@ -17,6 +17,10 @@ app.get('/assignment', (req, res) => {
 	res.render('assignment');
 });
 
+app.get('/login', (req, res) => {
+	res.render('login');
+});
+
 app.listen(config.NODE_APP_PORT, () => {
 	console.log(`${config.APP_NAME} App listening on port ${config.NODE_APP_PORT}`);
 });
